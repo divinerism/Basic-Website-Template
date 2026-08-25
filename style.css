@@ -3,4 +3,5 @@ body {
     background-color:#c0d8ee;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
 }
-.subtitle { color: rgb(233, 233, 246); }
+.subtitle { color: rgb(255, 255, 255); }
+#page-title { font-size: 48px; color: rgb(161, 161, 171); }
