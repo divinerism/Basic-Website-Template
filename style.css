@@ -21,6 +21,7 @@ body {
 #my-name { 
     color: #ffffff; 
     font-size: 12px; 
+    text-align: center;
 }
 
 .subheader { 
