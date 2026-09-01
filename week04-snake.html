@@ -7,6 +7,18 @@
 <body>
    <h1 class="page-title">Snake</h1>
   <p><a href="index.html">Back to home</a></p>
-  
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
 </body>
+<script>
+    var canvas = document.getElementById("gameCanvas");
+    var ctx = canvas.getContext("2d");
+    var CELL = 20;
+    var snake = { x: 5, y: 5 };
+    ctx.fillStyle = "#383c3f";
+    ctx.fillRect(0, 0, 400, 400);
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
+  </script>
+
 </html>
