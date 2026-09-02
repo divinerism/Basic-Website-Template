@@ -13,10 +13,22 @@
     var ctx = canvas.getContext("2d");
     var CELL = 20;
     var snake = { x: 5, y: 5 };
+  
+  function drawBoard() {
     ctx.fillStyle = "#186122";
     ctx.fillRect(0, 0, 400, 400);
     ctx.fillStyle = "#7DF527";
-    ctx.fillRect(snake.x * CELL, snake.y * CELL, CELL, CELL);
+    ctx.fillRect(snake.x, snake.y, 20, 20);}
+
+  setInterval(step, 100);
+  function step() {
+  snake.x = snake.x + 20;
+ 
+  if (snake.x > 380) {
+    snake.x = 0; }
+ 
+  drawBoard();}
+
   </script>
 </body>
 </html>
